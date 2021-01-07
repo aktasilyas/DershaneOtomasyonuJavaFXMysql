@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor1" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="704.0" styleClass="root2" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Anasayfa">
+   <children>
+      <Button fx:id="Cıkıs" alignment="CENTER" layoutX="589.0" layoutY="493.0" mnemonicParsing="false" onAction="#btn_cikis" prefHeight="33.0" prefWidth="108.0" text="Çıkış Yap" textFill="WHITE" AnchorPane.leftAnchor="589.0" AnchorPane.topAnchor="493.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <padding>
+            <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+         </padding>
+      </Button>
+      <Button fx:id="Hakkımızda" layoutX="460.0" layoutY="493.0" mnemonicParsing="false" onAction="#btn_hakkimizda" text="Hakkımızda" textFill="WHITE" AnchorPane.leftAnchor="460.0" AnchorPane.topAnchor="493.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="img1" fitHeight="86.0" fitWidth="87.0" layoutX="57.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="57.0" AnchorPane.topAnchor="65.0">
+         <image>
+            <Image url="@../Resim/ogrenciKayit.png" />
+         </image></ImageView>
+      <ImageView fx:id="img8" fitHeight="86.0" fitWidth="87.0" layoutX="363.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="363.0" AnchorPane.topAnchor="233.0">
+         <image>
+            <Image url="@../Resim/veliKayit.png" />
+         </image></ImageView>
+      <ImageView fx:id="img4" fitHeight="86.0" fitWidth="87.0" layoutX="524.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="524.0" AnchorPane.topAnchor="65.0">
+         <image>
+            <Image url="@../Resim/cariIslemler.png" />
+         </image></ImageView>
+      <ImageView fx:id="img7" fitHeight="86.0" fitWidth="87.0" layoutX="215.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="215.0" AnchorPane.topAnchor="233.0">
+         <image>
+            <Image url="@../Resim/personelBilgileri.png" />
+         </image></ImageView>
+      <ImageView fx:id="img3" fitHeight="86.0" fitWidth="87.0" layoutX="363.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="363.0" AnchorPane.topAnchor="65.0">
+         <image>
+            <Image url="@../Resim/odevTakip.png" />
+         </image></ImageView>
+      <ImageView fx:id="img6" fitHeight="86.0" fitWidth="87.0" layoutX="54.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="54.0" AnchorPane.topAnchor="233.0">
+         <image>
+            <Image url="@../Resim/personelKayit.png" />
+         </image></ImageView>
+      <ImageView fx:id="img2" fitHeight="86.0" fitWidth="87.0" layoutX="213.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="213.0" AnchorPane.topAnchor="65.0">
+         <image>
+            <Image url="@../Resim/ogrenciBilgileri.png" />
+         </image></ImageView>
+      <ImageView fx:id="img5" fitHeight="86.0" fitWidth="87.0" layoutX="521.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="521.0" AnchorPane.topAnchor="233.0">
+         <image>
+            <Image url="@../Resim/veliBilgileri.png" />
+         </image></ImageView>
+      <Button fx:id="Ogr_kayit" layoutX="30.0" layoutY="156.0" mnemonicParsing="false" onAction="#btn_ogr_kayit" text="Öğrenci Kayıt" textFill="WHITE" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="156.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="Odv_takip" layoutX="346.0" layoutY="156.0" mnemonicParsing="false" onAction="#btn_odv_takip" text="Ödev Takip" textFill="WHITE" AnchorPane.leftAnchor="346.0" AnchorPane.topAnchor="156.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="Ogr_bilgi" layoutX="183.0" layoutY="156.0" mnemonicParsing="false" onAction="#btn_ogr_bilgi" text="Öğrenci Bilgileri" textFill="WHITE" AnchorPane.leftAnchor="183.0" AnchorPane.topAnchor="156.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="Veli_bilgileri" layoutX="490.0" layoutY="328.0" mnemonicParsing="false" onAction="#btn_veli_bilgileri" prefHeight="33.0" prefWidth="155.0" text="Veli Bilgileri" textFill="WHITE" AnchorPane.leftAnchor="490.0" AnchorPane.topAnchor="328.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="Veli_kayit" layoutX="353.0" layoutY="328.0" mnemonicParsing="false" onAction="#btn_veli_kayit" text="Veli Kayıt" textFill="WHITE" AnchorPane.leftAnchor="353.0" AnchorPane.topAnchor="328.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="Prs_bilgileri" layoutX="181.0" layoutY="328.0" mnemonicParsing="false" onAction="#btn_prs_bilgileri" text="Personel Bilgileri" textFill="WHITE" AnchorPane.leftAnchor="181.0" AnchorPane.topAnchor="328.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="Prs_kayit" layoutX="31.0" layoutY="328.0" mnemonicParsing="false" onAction="#btn_prs_kayit" text="Personel Kayıt" textFill="WHITE" AnchorPane.leftAnchor="31.0" AnchorPane.topAnchor="328.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="Cari_hareket" layoutX="496.0" layoutY="156.0" mnemonicParsing="false" onAction="#Btn_cari_hareket" prefHeight="33.0" prefWidth="155.0" text="Cari Hareketler" textFill="WHITE" AnchorPane.leftAnchor="496.0" AnchorPane.topAnchor="156.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

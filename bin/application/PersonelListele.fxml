@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panePersonelListele" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="888.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PersonelListele">
+   <children>
+      <TextField fx:id="txtAdi" layoutX="191.0" layoutY="81.0" />
+      <TextField fx:id="txtpostakodu" layoutX="191.0" layoutY="211.0" />
+      <TextField fx:id="txtsoyadi" layoutX="191.0" layoutY="124.0" />
+      <TextField fx:id="gorevi" layoutX="191.0" layoutY="167.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="149.0" layoutY="93.0" text="Adı:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="114.0" layoutY="137.0" text="Soy Adı:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="128.0" layoutY="178.0" text="Görevi" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="120.0" layoutY="262.0" text="Cinsiyet:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="458.0" layoutY="87.0" text="Ev Adresi:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="492.0" layoutY="141.0" text="Sehir:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="95.0" layoutY="221.0" text="Posta Kodu:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="493.0" layoutY="228.0" text="Maaş" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textareaAdres" layoutX="547.0" layoutY="74.0" prefHeight="54.0" prefWidth="204.0" styleClass="textarea" />
+      <TextField fx:id="maas" layoutX="548.0" layoutY="220.0" prefHeight="41.0" prefWidth="204.0" />
+      <Button fx:id="anasayfa" layoutX="475.0" layoutY="361.0" mnemonicParsing="false" onAction="#btn_anasayfa" prefHeight="41.0" prefWidth="174.0" styleClass="font" text="Ana Sayfa" />
+      <Label fx:id="lblsonuc" alignment="CENTER" layoutX="12.0" layoutY="10.0" prefHeight="25.0" prefWidth="677.0" textFill="#e80505">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdbBayan" layoutX="191.0" layoutY="260.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="94.0" styleClass="radiobuton" text="Bayan" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdbErkek" layoutX="300.0" layoutY="259.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="94.0" styleClass="radiobuton" text="Erkek" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="txtsehir" layoutX="548.0" layoutY="134.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="489.0" layoutY="182.0" text="Semt:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtsemt" layoutX="548.0" layoutY="178.0" />
+      <TableView fx:id="tableview" layoutX="85.0" layoutY="374.0" onMouseClicked="#tableclick" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="Adi" prefWidth="75.0" text="Adi" />
+            <TableColumn fx:id="Soyadi" prefWidth="89.0" text="Soyadi" />
+            <TableColumn fx:id="Gorevi" prefWidth="93.0" text="Gorevi" />
+            <TableColumn fx:id="Cinsiyet" text="Cinsiyet" />
+            <TableColumn fx:id="EvAdresi" prefWidth="72.0" text="EvAdresi" />
+            <TableColumn fx:id="Postakodu" prefWidth="90.0" text="Postakodu" />
+            <TableColumn fx:id="Sehir" prefWidth="98.0" text="Sehir" />
+            <TableColumn fx:id="Semt" prefWidth="89.0" text="Semt" />
+            <TableColumn fx:id="Maas" prefWidth="75.0" text="Maas" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER_RIGHT" layoutY="10.0" prefHeight="25.0" prefWidth="137.0" text="Personel Ekleme" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="76.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnsil" prefHeight="41.0" prefWidth="174.0" text="Sil" />
+      <Button layoutX="281.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnguncelle" prefHeight="41.0" prefWidth="174.0" text="Guncelle" />
+   </children>
+</AnchorPane>

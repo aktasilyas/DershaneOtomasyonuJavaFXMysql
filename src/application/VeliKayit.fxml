@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="572.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VeliKayit">
+   <children>
+      <TextField fx:id="txtAdi" layoutX="191.0" layoutY="38.0" promptText="Adınız..." />
+      <TextField fx:id="txtsoyadi" layoutX="191.0" layoutY="81.0" promptText="Soyadınız..." />
+      <Label alignment="CENTER_RIGHT" layoutX="115.0" layoutY="50.0" text="Veli Adı:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="91.0" layoutY="94.0" text="Veli Soyadı:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="103.0" layoutY="135.0" text="Yakınlığı:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="77.0" layoutY="215.0" text="Posta Kodu:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="anasayfa" layoutX="166.0" layoutY="519.0" mnemonicParsing="false" onAction="#btn_anasayfa" prefHeight="45.0" prefWidth="127.0" styleClass="font" text="Ana Sayfa" />
+      <Button fx:id="kaydet" layoutX="297.0" layoutY="520.0" mnemonicParsing="false" onAction="#btn_kaydet" prefHeight="45.0" prefWidth="127.0" styleClass="font" text="Kaydet" />
+      <Label fx:id="lblsonuc" alignment="CENTER" layoutX="12.0" layoutY="10.0" prefHeight="25.0" prefWidth="677.0" textFill="#e80505">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtyakinligi" layoutX="191.0" layoutY="127.0" promptText="Yakınlığı" />
+      <Label alignment="CENTER_RIGHT" layoutX="69.0" layoutY="362.0" text="Gelir Düzeyi:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="68.0" layoutY="268.0" text="Cep Telefonu:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtegitimdurumu" layoutX="191.0" layoutY="171.0" promptText="Eğitim durumu" />
+      <Label alignment="CENTER_RIGHT" layoutX="80.0" layoutY="314.0" text="Tc Kimlik No:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="88.0" layoutY="414.0" text="İş Adresi:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtareaisadresi" layoutX="190.0" layoutY="399.0" prefHeight="54.0" prefWidth="204.0" promptText="iş adresi" styleClass="textarea" />
+      <Label alignment="CENTER_RIGHT" layoutX="89.0" layoutY="473.0" text="Ev Adresi:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtareaevadresi" layoutX="190.0" layoutY="459.0" prefHeight="57.0" prefWidth="204.0" promptText="ev adresi" styleClass="textarea" />
+      <Label alignment="CENTER_RIGHT" layoutX="60.0" layoutY="172.0" text="Eğitim Durumu:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtposta" layoutX="191.0" layoutY="214.0" promptText="Sayısal değer giriniz..." />
+      <TextField fx:id="txttelefon" layoutX="191.0" layoutY="260.0" promptText="Sayısal değer giriniz..." />
+      <TextField fx:id="txttc" layoutX="191.0" layoutY="308.0" promptText="Sayısal değer giriniz..." />
+      <TextField fx:id="txtgelir" layoutX="191.0" layoutY="355.0" promptText="Sayısal değer giriniz..." />
+   </children>
+</AnchorPane>

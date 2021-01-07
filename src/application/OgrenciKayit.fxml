@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="888.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OgrenciKayit">
+   <children>
+      <TextField fx:id="txtAdi" layoutX="191.0" layoutY="38.0" />
+      <TextField fx:id="txtpostakodu" layoutX="192.0" layoutY="314.0" />
+      <TextField fx:id="txtsoyadi" layoutX="191.0" layoutY="81.0" />
+      <TextField fx:id="txtsinifi" layoutX="191.0" layoutY="124.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="143.0" layoutY="50.0" text="Adı:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="110.0" layoutY="94.0" text="Soy Adı:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="128.0" layoutY="135.0" text="Sinifi:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="108.0" layoutY="174.0" text="Bolumu:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="105.0" layoutY="216.0" text="Cinsiyet:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="96.0" layoutY="264.0" text="Ev Adresi:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="124.0" layoutY="364.0" text="Sehir:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="78.0" layoutY="321.0" text="Posta Kodu:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="101.0" layoutY="451.0" text="Numara:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textareaAdres" layoutX="191.0" layoutY="251.0" prefHeight="54.0" prefWidth="204.0" styleClass="textarea" />
+      <TextField fx:id="txtnumara" layoutX="192.0" layoutY="446.0" prefHeight="41.0" prefWidth="204.0" />
+      <Button fx:id="anasayfa" layoutX="191.0" layoutY="495.0" mnemonicParsing="false" onAction="#btn_anasayfa" prefHeight="41.0" prefWidth="204.0" styleClass="font" text="Ana Sayfa" />
+      <Button fx:id="kaydet" layoutX="192.0" layoutY="543.0" mnemonicParsing="false" onAction="#btn_kaydet" prefHeight="41.0" prefWidth="204.0" styleClass="font" text="Kaydet" />
+      <Label fx:id="lblsonuc" alignment="CENTER" layoutX="12.0" layoutY="10.0" prefHeight="25.0" prefWidth="677.0" textFill="#e80505">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rdbBayan" layoutX="191.0" layoutY="217.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="95.0" styleClass="radiobuton" text="Bayan" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdbErkek" layoutX="300.0" layoutY="216.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="95.0" styleClass="radiobuton" text="Erkek" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="txtbolumu" layoutX="192.0" layoutY="166.0" />
+      <TextField fx:id="txtsehir" layoutX="192.0" layoutY="357.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="124.0" layoutY="405.0" text="Semt:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtsemt" layoutX="192.0" layoutY="401.0" />
+      <ImageView fx:id="imageviewKayit" fitHeight="355.0" fitWidth="285.0" layoutX="399.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

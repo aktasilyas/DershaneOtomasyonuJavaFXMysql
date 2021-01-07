@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OdevTakip">
+   <children>
+      <TextField fx:id="txtAdi" layoutX="201.0" layoutY="20.0" prefHeight="25.0" prefWidth="168.0" promptText="Adınız..." />
+      <TextField fx:id="txtsoyadi" layoutX="201.0" layoutY="64.0" prefHeight="25.0" prefWidth="168.0" promptText="Soyadınız..." />
+      <TextField fx:id="txtsinifi" layoutX="201.0" layoutY="106.0" prefHeight="14.0" prefWidth="168.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="153.0" layoutY="33.0" text="Adı:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="124.0" layoutY="72.0" text="Soy Adı:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="145.0" layoutY="108.0" text="Sinifi:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="125.0" layoutY="159.0" text="Bolumu:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="60.0" layoutY="200.0" text="Ödev alacağı ders:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="91.0" layoutY="244.0" text="Ders konusu:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="91.0" layoutY="290.0" text="Veriliş Tarihi:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="96.0" layoutY="382.0" text="Verilen Not:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="88.0" layoutY="333.0" text="Teslim Tarihi:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmailadresi" layoutX="202.0" layoutY="412.0" prefHeight="35.0" prefWidth="168.0" />
+      <TextField fx:id="txtbolumu" layoutX="201.0" layoutY="151.0" prefHeight="25.0" prefWidth="168.0" />
+      <TextField fx:id="txtodevalacagıders" layoutX="201.0" layoutY="195.0" prefHeight="25.0" prefWidth="168.0" />
+      <TextField fx:id="txtderskonusu" layoutX="201.0" layoutY="239.0" prefHeight="25.0" prefWidth="168.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="102.0" layoutY="417.0" text="Mail Adresi:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateverTarıhi" layoutX="201.0" layoutY="283.0" prefHeight="25.0" prefWidth="168.0" />
+      <DatePicker fx:id="dateTeslimtarihi" layoutX="201.0" layoutY="326.0" prefHeight="41.0" prefWidth="168.0" />
+      <TextField fx:id="txtverilennot" layoutX="202.0" layoutY="369.0" prefHeight="35.0" prefWidth="168.0" />
+      <HBox layoutX="46.0" layoutY="429.0" prefHeight="205.0" prefWidth="684.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TableView fx:id="tableview" onMouseClicked="#tableview_clicked" prefHeight="194.0" prefWidth="837.0">
+              <columns>
+                <TableColumn fx:id="K_id" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="K_adi" prefWidth="75.0" text="Adı" />
+                  <TableColumn fx:id="K_soyadi" prefWidth="75.0" text="Soyadı" />
+                  <TableColumn fx:id="K_sinifi" prefWidth="75.0" text="Sınıfı" />
+                  <TableColumn fx:id="K_bolumu" prefWidth="75.0" text="Bölümü" />
+                  <TableColumn fx:id="K_O_tarihi" prefWidth="75.0" text="Ö.Alacağı Ders" />
+                  <TableColumn fx:id="K_DersKonusu" prefWidth="75.0" text="DersKonusu" />
+                  <TableColumn fx:id="K_Vtarihi" prefWidth="75.0" text="V.Tarihi" />
+                  <TableColumn fx:id="K_Ttarihi" prefWidth="75.0" text="T.Tarihi" />
+                  <TableColumn fx:id="K_not" prefWidth="77.0" text="Not" />
+                  <TableColumn fx:id="K_mailadresi" prefWidth="75.0" text="MailAdresi" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <Button fx:id="anasayfa" layoutX="541.0" layoutY="426.0" mnemonicParsing="false" onAction="#btnanasayfa" text="Anasayfa " />
+      <Button fx:id="kaydet" layoutX="407.0" layoutY="426.0" mnemonicParsing="false" onAction="#btnkaydet" prefHeight="33.0" prefWidth="111.0" text="Kaydet" />
+      <ImageView fx:id="imageOdev" fitHeight="400.0" fitWidth="314.0" layoutX="407.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resim/Work.png" />
+         </image></ImageView>
+      <Button fx:id="sil" layoutX="407.0" layoutY="382.0" mnemonicParsing="false" onAction="#btnsil" prefHeight="33.0" prefWidth="111.0" text="Sil" />
+      <Button fx:id="guncelle" layoutX="541.0" layoutY="382.0" mnemonicParsing="false" onAction="#btnguncelle" prefHeight="33.0" prefWidth="111.0" text="Güncelle" />
+   </children>
+</AnchorPane>
